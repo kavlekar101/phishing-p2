@@ -1,6 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { Container, Navbar, Nav } from "react-bootstrap";
+import ShoppingCartIcon from "../images/fish-in-shopping-cart.png"; // Path to your custom icon
+import "../App.css"; // Ensure this is the path to your stylesheet
 
 function Header() {
   return (
@@ -25,7 +27,12 @@ function Header() {
               Products
             </Nav.Link>
             <Nav.Link as={Link} to="/shopping-cart">
-              🛒
+              <img
+                src={ShoppingCartIcon}
+                alt="Shopping Cart"
+                className="nav-icon"
+                style={{ width: "24px", height: "24px" }}
+              />
             </Nav.Link>
           </Nav>
         </Navbar.Collapse>

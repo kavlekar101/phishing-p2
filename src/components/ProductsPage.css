@@ -1,7 +1,7 @@
 .product-card {
   transition: transform 0.3s ease;
   border-color: navy;
-  height: 400px; /* Adjust this value as needed */
+  cursor: pointer; /* Makes it clear that the card is clickable */
 }
 
 .product-card:hover {
@@ -9,24 +9,23 @@
 }
 
 .product-card img {
-  width: 100%; /* Ensures image takes full width of the card */
-  height: auto; /* Maintains aspect ratio */
-  object-fit: cover; /* Ensures the image covers the area without stretching */
+  width: 100%;
+  height: auto;
+  object-fit: cover;
 }
 
 .product-card .card-body {
-  height: 150px; /* Adjust this value as needed */
   display: flex;
   flex-direction: column;
-  justify-content: space-between; /* This helps in aligning the title and buttons consistently */
+  justify-content: space-between;
 }
 
 .product-title {
   text-align: center;
   color: navy;
-  overflow: hidden; /* Prevents text overflow */
+  overflow: hidden;
   white-space: nowrap;
-  text-overflow: ellipsis; /* Adds an ellipsis if the text is too long */
+  text-overflow: ellipsis;
 }
 
 .quantity-btn {
@@ -43,5 +42,20 @@
 .quantity {
   font-weight: bold;
   color: navy;
-  margin: 0 15px; /* Increase the margin on the left and right */
+  margin: 0 15px;
+}
+
+.product-details {
+  text-align: center;
+  margin-top: 10px; /* Adds space between the quantity buttons and the details */
+}
+
+.product-price {
+  color: green; /* Color for the price, can be adjusted */
+  font-weight: bold;
+}
+
+.product-description {
+  color: #333; /* Darker color for the description for readability */
+  font-size: 0.9em; /* Slightly smaller font size for the description */
 }

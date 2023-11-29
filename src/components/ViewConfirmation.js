@@ -39,7 +39,9 @@ function ViewConfirmation() {
                 Shipping to: {shippingDetails.name},{" "}
                 {shippingDetails.addressLine1}, {shippingDetails.city}
               </Card.Text>
-              {/* Add more details as needed */}
+              <Card.Text>
+                Confirmation Number: {Math.floor(Math.random() * 1000000000)}
+              </Card.Text>
             </Card.Body>
             <Card.Footer className="text-muted">
               Your fishes are swimming their way to you!

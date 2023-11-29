@@ -1,0 +1,3 @@
+.hover-effect:focus, .hover-effect:active {
+  position: relative; /* Ensures the button doesn't move on click */
+}

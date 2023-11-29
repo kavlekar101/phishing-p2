@@ -1,0 +1,10 @@
+.full-height {
+  min-height: 100vh; /* This makes the container take the full viewport height */
+  display: flex;
+  align-items: center; /* This centers the card vertically */
+}
+
+.error {
+  color: red;
+  font-size: 0.8em;
+}

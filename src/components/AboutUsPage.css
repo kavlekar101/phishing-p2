@@ -1,0 +1,49 @@
+.about-us-page {
+  background-color: #f1f7fc; /* Light blue background for nautical theme */
+  color: #0a3d62; /* Dark blue text */
+  min-height: 100vh; /* Full height */
+  overflow-y: auto; /* Ensure the page is scrollable */
+}
+
+.about-us-page h1 {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #1b4b72; /* Darker blue for headings */
+}
+
+.about-us-page h2 {
+  font-family: 'Arial', sans-serif;
+  color: #114b5f;
+}
+
+.about-us-page p {
+  font-family: 'Verdana', sans-serif;
+  line-height: 1.6;
+}
+
+/* Custom styling for images */
+.about-us-page img {
+  border-radius: 10px;
+  border: 3px solid #0a3d62; /* Dark blue border for images */
+  width: 100%; /* Images take full width of the container */
+  height: auto; /* Height adjusts automatically to maintain aspect ratio */
+  object-fit: contain; /* Ensures the entire image is shown */
+}
+
+/* Wrapper for maintaining aspect ratio */
+.aspect-ratio-box {
+  position: relative;
+  width: 50%; /* Adjust this value to make the image container smaller */
+  padding-top: 50%; /* Keep the same value as width for a 1:1 aspect ratio */
+  margin: 0 auto; /* Center the box if it's smaller than the column */
+}
+
+.aspect-ratio-box img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures image covers the area without stretching */
+  border-radius: 10px;
+  border: 3px solid #0a3d62;
+}

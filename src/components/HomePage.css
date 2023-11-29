@@ -1,0 +1,15 @@
+.card-container {
+  display: flex;
+  flex-direction: column;
+  height: 100%; /* Ensures the container takes full height */
+}
+
+.card-container .card {
+  flex-grow: 1; /* Allows the card to fill the available space */
+  margin-bottom: 15px; /* Spacing between card and image */
+}
+
+.card-container .card-img-top {
+  width: 100%; /* Full width of the column */
+  margin-bottom: 15px; /* Spacing between image and card */
+}

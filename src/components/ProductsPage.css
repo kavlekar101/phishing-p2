@@ -1,0 +1,47 @@
+.product-card {
+  transition: transform 0.3s ease;
+  border-color: navy;
+  height: 400px; /* Adjust this value as needed */
+}
+
+.product-card:hover {
+  transform: scale(1.05);
+}
+
+.product-card img {
+  width: 100%; /* Ensures image takes full width of the card */
+  height: auto; /* Maintains aspect ratio */
+  object-fit: cover; /* Ensures the image covers the area without stretching */
+}
+
+.product-card .card-body {
+  height: 150px; /* Adjust this value as needed */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* This helps in aligning the title and buttons consistently */
+}
+
+.product-title {
+  text-align: center;
+  color: navy;
+  overflow: hidden; /* Prevents text overflow */
+  white-space: nowrap;
+  text-overflow: ellipsis; /* Adds an ellipsis if the text is too long */
+}
+
+.quantity-btn {
+  background-color: white;
+  color: navy;
+  border-color: navy;
+}
+
+.quantity-btn:hover {
+  background-color: navy;
+  color: white;
+}
+
+.quantity {
+  font-weight: bold;
+  color: navy;
+  margin: 0 15px; /* Increase the margin on the left and right */
+}

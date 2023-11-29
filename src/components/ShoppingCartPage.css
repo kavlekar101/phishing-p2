@@ -1,0 +1,35 @@
+.shopping-cart-container {
+  background-color: #f0f8ff; /* Light azure reminiscent of the sea */
+  color: #013a63; /* Deep blue for text, representing the ocean */
+}
+
+.shopping-cart-title {
+  text-align: center;
+  color: #0275d8; /* Bright blue for the title */
+}
+
+.cart-item {
+  border: 1px solid #0275d8; /* Blue border for each cart item */
+}
+
+.cart-item-image {
+  padding: 10px;
+}
+
+.totals-box {
+  background-color: #e6f7ff; /* Very light blue for the totals box */
+  padding: 20px;
+  border-radius: 10px;
+  border: 2px solid #0275d8;
+  margin-top: 20px;
+  margin-bottom: 30px; /* Added padding at the bottom */
+  text-align: right; /* Right-align the text in the totals box */
+}
+
+.subtotal-title, .tax-title, .total-title {
+  color: #013a63;
+  font-weight: bold;
+  margin-bottom: 10px; /* Adds space between each line */
+}
+
+/* Additional styling can be added as needed */

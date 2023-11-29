@@ -1,10 +1,18 @@
 import React from "react";
-import { Container, Carousel } from "react-bootstrap";
+import { Container, Carousel, Button } from "react-bootstrap";
 import alex from "../images/alex.jpeg";
 import jordan from "../images/jordan.jpeg";
 import sam from "../images/sam.webp";
+import { useNavigate } from "react-router-dom";
 
 function TestimonialsSection() {
+    const navigate = useNavigate();
+
+    // Function to handle navigation to payment entry
+    const navigateToContactUs = () => {
+      navigate("/contact-us");
+    };
+
     return (
       <div
         className="text-center py-5"
@@ -133,6 +141,13 @@ function TestimonialsSection() {
               </div>
             </Carousel.Item>
           </Carousel>
+          <Button
+            variant="outline-light"
+            className="hover-effect"
+            onClick={navigateToContactUs}
+          >
+            Contact Us
+          </Button>
         </Container>
       </div>
     );

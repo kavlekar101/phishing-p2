@@ -1,11 +1,23 @@
 import React from "react";
 import { Container, Row, Col, Button, Card } from "react-bootstrap";
 import dailyFishes from "../images/daily-fishing.jpeg";
-import sustainableFishes from "../images/sustainable-fishing.jpeg";
+import sustainableFishes from "../images/sustainable-fishing.png";
 import vareityFishes from "../images/variety-of-fishes.jpeg";
 import TestimonialsSection from "./TestimonialsSection";
+import { useNavigate } from "react-router-dom"; // Import useNavigate
 
 function HomePage() {
+  const navigate = useNavigate();
+
+  // Function to handle navigation to payment entry
+  const navigateToProducts = () => {
+    navigate("/purchase");
+  };
+
+  // Function to handle navigation to payment entry
+  const navigateToAboutUs = () => {
+    navigate("/about-us");
+  };
   return (
     <div>
       {/* Hero Section with Fixed Background Image */}
@@ -56,8 +68,9 @@ function HomePage() {
               <Button
                 variant="primary"
                 style={{ padding: "10px 20px", fontSize: "1rem" }}
+                onClick={navigateToProducts}
               >
-                Discover More
+                Start Exploring
               </Button>
             </Card.Body>
           </Card>
@@ -175,8 +188,12 @@ function HomePage() {
             exhibits, attend expert-led workshops, and be part of a movement
             that values the ocean's health as much as its bounty.
           </p>
-          <Button variant="outline-light" className="hover-effect">
-            Get Started
+          <Button
+            variant="outline-light"
+            className="hover-effect"
+            onClick={navigateToAboutUs}
+          >
+            Learn More About Us
           </Button>
         </Container>
       </div>

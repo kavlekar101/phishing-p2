@@ -12,7 +12,7 @@ function HomePage() {
       <div
         className="hero-section text-center"
         style={{
-          backgroundImage: "url(finding-nemo-scene.jpg)",
+          backgroundImage: "url(fishing-in-the-morning.jpeg)",
           backgroundSize: "cover",
           backgroundAttachment: "fixed",
           height: "100vh", // Full viewport height
@@ -127,7 +127,7 @@ function HomePage() {
       <div
         className="hero-section text-center"
         style={{
-          backgroundImage: "url(finding-nemo-scene.jpg)",
+          backgroundImage: "url(nautilus.webp)",
           backgroundSize: "cover",
           backgroundAttachment: "fixed",
           height: "100vh", // Full viewport height

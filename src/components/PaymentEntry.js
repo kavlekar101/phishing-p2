@@ -24,11 +24,11 @@ function PaymentEntry() {
   };
 
   const validateCardNumber = (number) => {
-    return number.length === 16;
+    return /^\d{16}$/.test(number);
   };
 
   const validateCVV = (cvv) => {
-    return cvv.length === 3;
+    return /^\d{3}$/.test(cvv);
   };
 
   const validateName = (name) => {
@@ -36,7 +36,7 @@ function PaymentEntry() {
   };
 
   const validateExpiryDate = (date) => {
-    return /^(0[1-9]|1[0-2])\/?([0-9]{2})$/.test(date);
+    return /^(0[1-9]|1[0-2])\/(0[1-9]|[1-3][0-9])$/.test(date);
   };
 
   const handleChange = (e) => {
@@ -62,7 +62,7 @@ function PaymentEntry() {
       newErrors.cardHolderName = "Name must contain only letters";
     }
     if (!validateExpiryDate(cardDetails.expiryDate)) {
-      newErrors.expiryDate = "Invalid expiry date format";
+      newErrors.expiryDate = "Invalid expiry date format (must follow form 00/00)";
     }
 
     setErrors(newErrors);

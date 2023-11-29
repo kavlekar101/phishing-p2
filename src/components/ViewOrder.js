@@ -1,7 +1,8 @@
 import React, { useContext } from "react";
 import { ShoppingCartContext } from "./ShoppingCartContext";
-import { Card, ListGroup, Container, Row, Col, Button } from "react-bootstrap";
+import { Card, ListGroup, Row, Col, Button } from "react-bootstrap";
 import { useNavigate } from "react-router-dom";
+import ocean from "../images/ocean-background.jpeg";
 
 function ViewOrder() {
   const { cartItems, paymentDetails, shippingDetails } = useContext(ShoppingCartContext);
@@ -14,8 +15,15 @@ function ViewOrder() {
   };
 
   return (
-    <Container className="p-3">
-      <Row className="justify-content-md-center">
+    <div
+      className="p-3"
+      style={{
+        backgroundImage: `url(${ocean})`,
+        backgroundSize: "cover",
+        width: "100%",
+      }}
+    >
+      <Row className="justify-content-center">
         <Col md={6}>
           <Card>
             <Card.Header>Order Summary</Card.Header>
@@ -27,7 +35,7 @@ function ViewOrder() {
               ))}
             </ListGroup>
           </Card>
-          <Card className="mt-3 mt-3">
+          <Card className="mt-3">
             <Card.Header>Payment Details</Card.Header>
             <ListGroup variant="flush">
               <ListGroup.Item>
@@ -56,7 +64,7 @@ function ViewOrder() {
           <Button onClick={navigateToViewConfirmation}>Confirm Order</Button>
         </Col>
       </Row>
-    </Container>
+    </div>
   );
 }
 

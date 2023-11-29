@@ -9,7 +9,7 @@ function Header() {
     <Navbar bg="dark" variant="dark" expand="lg" sticky="top">
       <Container className="justify-content-between">
         <Navbar.Brand as={Link} to="/">
-          Phishers' Phlea Phair
+          AquaticPals
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
@@ -31,7 +31,7 @@ function Header() {
                 src={ShoppingCartIcon}
                 alt="Shopping Cart"
                 className="nav-icon"
-                style={{ width: "36px", height: "24px"}}
+                style={{ width: "36px", height: "24px" }}
               />
             </Nav.Link>
           </Nav>

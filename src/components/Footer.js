@@ -17,7 +17,7 @@ function Footer() {
         {/* Social Icons and Company Name Container */}
         <div className="d-flex align-items-center">
           {/* Company Name with Right Margin */}
-          <p className="mb-0 me-3">© 2023 Phishers' Phlea Phair</p>
+          <p className="mb-0 me-3">© 2023 AquaticPals</p>
 
           {/* Social Icons with Increased Padding */}
           <div>

@@ -183,7 +183,7 @@ function HomePage() {
       <div
         className="hero-section text-center"
         style={{
-          backgroundImage: "url(finding-nemo-scene.jpg)",
+          backgroundImage: "url(aquarium.jpeg)",
           backgroundSize: "cover",
           backgroundAttachment: "fixed",
           height: "100vh", // Full viewport height

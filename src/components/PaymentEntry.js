@@ -1,9 +1,10 @@
 import React, { useState, useContext } from "react";
-import { Form, Button, Card, Container, Row, Col } from "react-bootstrap";
+import { Form, Button, Card, Row, Col } from "react-bootstrap";
 import { useNavigate } from "react-router-dom"; // Import useNavigate
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./PaymentEntry.css"; // Make sure to create this CSS file
 import { ShoppingCartContext } from "./ShoppingCartContext";
+import ocean from "../images/ocean-background.jpeg";
 
 function PaymentEntry() {
   const { updatePaymentDetails } = useContext(ShoppingCartContext);
@@ -75,7 +76,13 @@ function PaymentEntry() {
   };
 
   return (
-    <Container className="p-3">
+    <div
+      className="p-3"
+      style={{
+        backgroundImage: `url(${ocean})`,
+        backgroundSize: "cover",
+      }}
+    >
       <Row className="justify-content-md-center align-items-center full-height">
         <Col md={6}>
           <Card>
@@ -150,10 +157,7 @@ function PaymentEntry() {
                   {/* Assuming no validation for discount code, so no error message */}
                 </Form.Group>
 
-                <Button
-                  variant="primary"
-                  type="submit"
-                >
+                <Button variant="primary" type="submit">
                   Submit Payment
                 </Button>
               </Form>
@@ -161,7 +165,7 @@ function PaymentEntry() {
           </Card>
         </Col>
       </Row>
-    </Container>
+    </div>
   );
 }
 

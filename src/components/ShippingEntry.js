@@ -1,9 +1,10 @@
 import React, { useState } from "react";
-import { Form, Card, Container, Button, Row, Col } from "react-bootstrap";
+import { Form, Card, Button, Row, Col } from "react-bootstrap";
 import { useNavigate } from "react-router-dom"; // Import useNavigate
 import "bootstrap/dist/css/bootstrap.min.css";
 import { ShoppingCartContext } from "./ShoppingCartContext";
 import { useContext } from "react";
+import ocean from "../images/ocean-background.jpeg";
 
 function ShippingEntry() {
   const [shippingDetails, setShippingDetails] = useState({
@@ -84,7 +85,13 @@ function ShippingEntry() {
   };
 
   return (
-    <Container className="p-3">
+    <div
+      className="p-3"
+      style={{
+        backgroundImage: `url(${ocean})`,
+        backgroundSize: "cover",
+      }}
+    >
       <Row className="justify-content-md-center align-items-center full-height">
         <Col md={6}>
           <Card>
@@ -162,10 +169,7 @@ function ShippingEntry() {
                   {errors.zip && <div className="error">{errors.zip}</div>}
                 </Form.Group>
 
-                <Button
-                  variant="primary"
-                  type="submit"
-                >
+                <Button variant="primary" type="submit">
                   Submit
                 </Button>
               </Form>
@@ -173,7 +177,7 @@ function ShippingEntry() {
           </Card>
         </Col>
       </Row>
-    </Container>
+    </div>
   );
 }
 

@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
-import { Card, Container, Row, Col, Image } from "react-bootstrap";
-import oceanBackground from "../images/ocean-waves.jpg"; // Import an ocean-themed background image
+import { Card, Row, Col, Image } from "react-bootstrap";
+import oceanBackground from "../images/ocean-background.jpeg"; // Import an ocean-themed background image
 import fishLogo from "../images/fish-logo.jpeg"; // Import your store's fish logo
 import { ShoppingCartContext } from "./ShoppingCartContext"; // Adjust the import path as needed
 
@@ -8,7 +8,7 @@ function ViewConfirmation() {
   const { paymentDetails, shippingDetails } = useContext(ShoppingCartContext);
 
   return (
-    <Container
+    <div
       style={{
         backgroundImage: `url(${oceanBackground})`,
         backgroundSize: "cover",
@@ -18,7 +18,7 @@ function ViewConfirmation() {
         <Col md={6}>
           <Card
             className="text-center"
-            style={{ backgroundColor: "rgba(255, 255, 255, 0.8)" }}
+            style={{ backgroundColor: "rgba(255, 255, 255, 0.9)" }}
           >
             <Card.Header>
               <Image src={fishLogo} alt="Fish Store Logo" fluid />
@@ -49,7 +49,7 @@ function ViewConfirmation() {
           </Card>
         </Col>
       </Row>
-    </Container>
+    </div>
   );
 }
 

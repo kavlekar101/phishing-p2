@@ -31,7 +31,7 @@ function Header() {
                 src={ShoppingCartIcon}
                 alt="Shopping Cart"
                 className="nav-icon"
-                style={{ width: "24px", height: "24px" }}
+                style={{ width: "36px", height: "24px"}}
               />
             </Nav.Link>
           </Nav>
